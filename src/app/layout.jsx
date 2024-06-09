@@ -13,7 +13,9 @@ export default function RootLayout({ children }) {
       <body>
         <div className="flex h-screen flex-col justify-between bg-blue-950 sm:bg-red-950 md:bg-green-950 lg:bg-purple-950 xl:bg-black 2xl:bg-slate-900">
           <Navbar />
-          {children}
+          <main className="mx-auto px-7 xl:px-20 2xl:max-w-screen-2xl">
+            {children}
+          </main>
           <Footer />
         </div>
       </body>

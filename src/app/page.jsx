@@ -2,9 +2,9 @@ import Image from "next/image";
 
 export default function HomePage() {
   return (
-    <div className="grid grid-cols-2">
+    <div className="m-auto grid gap-3 md:grid-cols-2">
       <div>
-        <h1 className="text-6xl font-bold leading-tight">
+        <h1 className="text-5xl font-bold leading-tight lg:text-6xl">
           Creative
           <br />
           Thoughts
@@ -15,18 +15,16 @@ export default function HomePage() {
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis,
           vero minus? Deserunt at a cumque corporis nesciunt.
         </p>
-        <div className="flex gap-5">
-          <button className="rounded bg-white px-10 py-5 text-black">
+        <div className="mb-10 flex gap-5 lg:mb-0">
+          <button className="rounded bg-white px-7 py-3 text-black">
             Learn More
           </button>
-          <button className="rounded bg-blue-600 px-10 py-5 text-white">
+          <button className="rounded bg-blue-600 px-7 py-3 text-white">
             Contact
           </button>
         </div>
       </div>
-      <div className="flex items-center justify-center">
-        <Image className="h-10 w-10 bg-red-200" />
-      </div>
+      <Image className="bg-red-200" />
     </div>
   );
 }
