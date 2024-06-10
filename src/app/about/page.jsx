@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function AboutPage() {
   return (
-    <div className="m-auto grid gap-3 md:grid-cols-2">
+    <div className="m-auto grid gap-3 lg:grid-cols-2">
       <div>
         <p className="mb-12 text-xl font-bold">About Agency</p>
         <h1 className="text-5xl font-bold leading-tight lg:text-6xl">
