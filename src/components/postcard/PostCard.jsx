@@ -15,7 +15,7 @@ const PostCard = () => {
           aliquam quasi beatae, omnis alias quod explicabo ex exercitationem
           illum magnam?..
         </p>
-        <Link href="/blog" className="mt-5 block w-fit">
+        <Link href="/blog/postId" className="mt-5 block w-fit">
           Read more
         </Link>
       </div>
