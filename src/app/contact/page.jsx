@@ -7,8 +7,8 @@ export default function ContactPage() {
   };
 
   return (
-    <div className="m-auto gap-10 lg:grid lg:grid-cols-2">
-      <Image className="bg-red-200" />
+    <div className="m-auto flex h-full items-center gap-10 lg:grid lg:grid-cols-2">
+      <Image className="h-2/3 bg-red-200" />
       <div>
         <form className="flex flex-col gap-6">
           <input
