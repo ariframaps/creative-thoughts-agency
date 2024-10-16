@@ -48,11 +48,6 @@ const postSchema = new mongoose.Schema(
     userId: {
       type: String,
     },
-    postId: {
-      type: String,
-      required: true,
-      unique: true,
-    },
     slug: {
       type: String,
       required: true,
