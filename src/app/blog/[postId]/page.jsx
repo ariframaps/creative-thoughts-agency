@@ -1,5 +1,6 @@
 import Image from "next/image";
-import PostInfo from "@/components/postinfo/PostInfo";
+import PostInfo from "../../../components/postinfo/PostInfo";
+import { posts } from "../../../lib/data";
 
 async function getSinglePost(postId) {
   const response = await fetch(
@@ -10,6 +11,7 @@ async function getSinglePost(postId) {
 
 const page = async ({ params }) => {
   const singlePost = await getSinglePost(params.postId);
+  // const singlePost = posts[params.postId - 1];
 
   return (
     <div className="flex h-full flex-col gap-10 lg:flex-row xl:gap-24">
