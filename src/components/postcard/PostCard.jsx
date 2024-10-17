@@ -11,7 +11,7 @@ const PostCard = ({ post }) => {
       <div className="pe-7">
         <h3 className="my-5 text-2xl font-bold">{post.title}</h3>
         <p>{post.desc}..</p>
-        <Link href={`/blog/${post.id}`} className="mt-5 block w-fit">
+        <Link href={`/blog/${post.slug}`} className="mt-5 block w-fit">
           Read more
         </Link>
       </div>

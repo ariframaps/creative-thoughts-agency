@@ -1,17 +1,18 @@
 import Image from "next/image";
 import PostInfo from "../../../components/postinfo/PostInfo";
-import { getSinglePost } from "../../../lib/data";
+// import { getSinglePost } from "../../../lib/data";
 import { posts } from "../../../lib/data";
 
-// async function getSinglePost(postId) {
-//   const response = await fetch(
-//     `https://jsonplaceholder.typicode.com/posts/${postId}`,
-//   );
-//   return response.json();
-// }
+async function getSinglePost(slug) {
+  const response = await fetch(`http://localhost:3000/api/blog/${slug}`);
+  if (!response.ok) {
+    throw new Error("Something went wrong");
+  }
+  return response.json();
+}
 
 const page = async ({ params }) => {
-  const singlePost = await getSinglePost(params.id);
+  const singlePost = await getSinglePost(params.slug);
   // const singlePost = posts[params.postId - 1];
 
   return (
